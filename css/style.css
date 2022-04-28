@@ -1,3 +1,85 @@
 .card-group {
     padding-top: 20px;
 }
+
+
+.card {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+}
+
+.perfil-iniciar{
+    background-color: #000000;
+    border-radius: 20px;
+}
+.perfil-iniciar:hover{
+    background-color: #ffd452;
+    color: rgb(63, 160, 212);
+}
+.nav-link:hover{
+    background-color: #ffd452;
+    
+}
+.btn-primary{
+    background-color: black;
+}
+.reg{
+    display: flex;
+    text-align: center;
+    
+}
+
+
+
+
+.formulario-contacto-fieldset{
+    width: 60%;
+    margin: 40px auto 100px;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-template-areas: 
+    "label-nombre label-nombre"
+    "nombre nombre"
+    "label-email label-email"
+    "email email"
+    "label-telefono label-telefono"
+    "telefono telefono"
+    "label-mensaje label-mensaje"
+    "mensaje mensaje"
+    "none enviar";
+    gap: 10px;
+}
+#nombre, #email, #telefono, #mensaje{
+    background-color: tan;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+}
+
+#mensaje{
+    grid-area: mensaje;
+    height: 150px;
+}
+label{
+    text-align: left;
+    padding-left: 10px;
+}
+
+#enviar{
+    grid-area: enviar;
+    background-color: tan;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.label-nombre{grid-area: label-nombre;}
+#nombre{grid-area: nombre;}
+.label-email{grid-area: label-email;}
+#email{grid-area: email;}
+.label-telefono{grid-area: label-telefono;}
+#telefono{grid-area: telefono;}
+.label-mensaje{ grid-area: label-mensaje;}
